@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
     
     private func setupPlayer() {
-        guard let orginalUrl = URL(string: "https://content.jwplatform.com/manifests/vM7nH0Kl.m3u8")
+        guard let orginalUrl = URL(string: "https://mid-cdn.fptplay.net/hda1/vtv1hd_hls.smil/playlist.m3u8")
         else { return }
         let parsedUrl = SWCP2pEngine.sharedInstance().parse(streamURL: orginalUrl)
         player = AVPlayer.init(url: parsedUrl)

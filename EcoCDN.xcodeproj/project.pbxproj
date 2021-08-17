@@ -14,10 +14,10 @@
 		2A09133D26CBBB7F00286496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A09133B26CBBB7F00286496 /* Main.storyboard */; };
 		2A09133F26CBBB8000286496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A09133E26CBBB8000286496 /* Assets.xcassets */; };
 		2A09134226CBBB8000286496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A09134026CBBB8000286496 /* LaunchScreen.storyboard */; };
-		2A533B4F26CBBD1500C3F8AC /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A533B4D26CBBD1500C3F8AC /* WebRTC.xcframework */; };
-		2A533B5026CBBD1500C3F8AC /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A533B4D26CBBD1500C3F8AC /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2A533B5126CBBD1500C3F8AC /* SwarmCloudSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A533B4E26CBBD1500C3F8AC /* SwarmCloudSDK.xcframework */; };
-		2A533B5226CBBD1500C3F8AC /* SwarmCloudSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A533B4E26CBBD1500C3F8AC /* SwarmCloudSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A533B5B26CBE98300C3F8AC /* SwarmCloudSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A533B4E26CBBD1500C3F8AC /* SwarmCloudSDK.xcframework */; };
+		2A533B5C26CBE98300C3F8AC /* SwarmCloudSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A533B4E26CBBD1500C3F8AC /* SwarmCloudSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A533B5D26CBE98300C3F8AC /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A533B4D26CBBD1500C3F8AC /* WebRTC.xcframework */; };
+		2A533B5E26CBE98300C3F8AC /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A533B4D26CBBD1500C3F8AC /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7FC1C10D0C86030175B8ABEE /* Pods_EcoCDN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B751624E5DA179249FA879 /* Pods_EcoCDN.framework */; };
 		CEC1FEB85F7D189B0361561A /* Pods_EcoCDNTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF94F6DAAC15C901E3D4E0D /* Pods_EcoCDNTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,14 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2A533B5326CBBD1500C3F8AC /* Embed Frameworks */ = {
+		2A533B5F26CBE98300C3F8AC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2A533B5026CBBD1500C3F8AC /* WebRTC.xcframework in Embed Frameworks */,
-				2A533B5226CBBD1500C3F8AC /* SwarmCloudSDK.xcframework in Embed Frameworks */,
+				2A533B5E26CBE98300C3F8AC /* WebRTC.xcframework in Embed Frameworks */,
+				2A533B5C26CBE98300C3F8AC /* SwarmCloudSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,9 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A533B4F26CBBD1500C3F8AC /* WebRTC.xcframework in Frameworks */,
 				7FC1C10D0C86030175B8ABEE /* Pods_EcoCDN.framework in Frameworks */,
-				2A533B5126CBBD1500C3F8AC /* SwarmCloudSDK.xcframework in Frameworks */,
+				2A533B5B26CBE98300C3F8AC /* SwarmCloudSDK.xcframework in Frameworks */,
+				2A533B5D26CBE98300C3F8AC /* WebRTC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +179,7 @@
 				2A09132F26CBBB7F00286496 /* Frameworks */,
 				2A09133026CBBB7F00286496 /* Resources */,
 				43F415F81099F1AE6C7CDA97 /* [CP] Embed Pods Frameworks */,
-				2A533B5326CBBD1500C3F8AC /* Embed Frameworks */,
+				2A533B5F26CBE98300C3F8AC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -591,7 +591,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.starfall.EcoCDN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starfall.cdn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -612,7 +612,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.starfall.EcoCDN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starfall.cdn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
