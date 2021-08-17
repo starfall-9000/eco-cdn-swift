@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C97918577997ED9652887C5 /* Pods_EcoCDN_EcoCDNUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA017EEA86E72A5E0828A0E8 /* Pods_EcoCDN_EcoCDNUITests.framework */; };
 		2A09133626CBBB7F00286496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A09133526CBBB7F00286496 /* AppDelegate.swift */; };
 		2A09133826CBBB7F00286496 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A09133726CBBB7F00286496 /* SceneDelegate.swift */; };
 		2A09133A26CBBB7F00286496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A09133926CBBB7F00286496 /* ViewController.swift */; };
 		2A09133D26CBBB7F00286496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A09133B26CBBB7F00286496 /* Main.storyboard */; };
 		2A09133F26CBBB8000286496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A09133E26CBBB8000286496 /* Assets.xcassets */; };
 		2A09134226CBBB8000286496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A09134026CBBB8000286496 /* LaunchScreen.storyboard */; };
-		2A09134D26CBBB8000286496 /* EcoCDNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A09134C26CBBB8000286496 /* EcoCDNTests.swift */; };
-		2A09135826CBBB8000286496 /* EcoCDNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A09135726CBBB8000286496 /* EcoCDNUITests.swift */; };
+		2A533B4F26CBBD1500C3F8AC /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A533B4D26CBBD1500C3F8AC /* WebRTC.xcframework */; };
+		2A533B5026CBBD1500C3F8AC /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A533B4D26CBBD1500C3F8AC /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A533B5126CBBD1500C3F8AC /* SwarmCloudSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A533B4E26CBBD1500C3F8AC /* SwarmCloudSDK.xcframework */; };
+		2A533B5226CBBD1500C3F8AC /* SwarmCloudSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A533B4E26CBBD1500C3F8AC /* SwarmCloudSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7FC1C10D0C86030175B8ABEE /* Pods_EcoCDN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B751624E5DA179249FA879 /* Pods_EcoCDN.framework */; };
+		CEC1FEB85F7D189B0361561A /* Pods_EcoCDNTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF94F6DAAC15C901E3D4E0D /* Pods_EcoCDNTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +39,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2A533B5326CBBD1500C3F8AC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2A533B5026CBBD1500C3F8AC /* WebRTC.xcframework in Embed Frameworks */,
+				2A533B5226CBBD1500C3F8AC /* SwarmCloudSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		18F78D2E47AA24F25D78DFF7 /* Pods-EcoCDNTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoCDNTests.release.xcconfig"; path = "Target Support Files/Pods-EcoCDNTests/Pods-EcoCDNTests.release.xcconfig"; sourceTree = "<group>"; };
 		2A09133226CBBB7F00286496 /* EcoCDN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoCDN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A09133526CBBB7F00286496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A09133726CBBB7F00286496 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,11 +65,17 @@
 		2A09134126CBBB8000286496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A09134326CBBB8000286496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A09134826CBBB8000286496 /* EcoCDNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoCDNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A09134C26CBBB8000286496 /* EcoCDNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoCDNTests.swift; sourceTree = "<group>"; };
-		2A09134E26CBBB8000286496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A09135326CBBB8000286496 /* EcoCDNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoCDNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A09135726CBBB8000286496 /* EcoCDNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoCDNUITests.swift; sourceTree = "<group>"; };
-		2A09135926CBBB8000286496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A533B4D26CBBD1500C3F8AC /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = ../../Downloads/WebRTC.xcframework; sourceTree = "<group>"; };
+		2A533B4E26CBBD1500C3F8AC /* SwarmCloudSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwarmCloudSDK.xcframework; path = ../../Downloads/SwarmCloudSDK.xcframework; sourceTree = "<group>"; };
+		2B79657BE8BAF884EA385D3E /* Pods-EcoCDN-EcoCDNUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoCDN-EcoCDNUITests.release.xcconfig"; path = "Target Support Files/Pods-EcoCDN-EcoCDNUITests/Pods-EcoCDN-EcoCDNUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4599977E290F0731E01D8B30 /* Pods-EcoCDN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoCDN.release.xcconfig"; path = "Target Support Files/Pods-EcoCDN/Pods-EcoCDN.release.xcconfig"; sourceTree = "<group>"; };
+		4C56EB7B93E403CDE25A70BD /* Pods-EcoCDNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoCDNTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoCDNTests/Pods-EcoCDNTests.debug.xcconfig"; sourceTree = "<group>"; };
+		54B751624E5DA179249FA879 /* Pods_EcoCDN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoCDN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CB985A6D1CBAC9F804E0F8 /* Pods-EcoCDN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoCDN.debug.xcconfig"; path = "Target Support Files/Pods-EcoCDN/Pods-EcoCDN.debug.xcconfig"; sourceTree = "<group>"; };
+		BA017EEA86E72A5E0828A0E8 /* Pods_EcoCDN_EcoCDNUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoCDN_EcoCDNUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCDC4119DB004B09380E7DB7 /* Pods-EcoCDN-EcoCDNUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoCDN-EcoCDNUITests.debug.xcconfig"; path = "Target Support Files/Pods-EcoCDN-EcoCDNUITests/Pods-EcoCDN-EcoCDNUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEF94F6DAAC15C901E3D4E0D /* Pods_EcoCDNTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoCDNTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A533B4F26CBBD1500C3F8AC /* WebRTC.xcframework in Frameworks */,
+				7FC1C10D0C86030175B8ABEE /* Pods_EcoCDN.framework in Frameworks */,
+				2A533B5126CBBD1500C3F8AC /* SwarmCloudSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC1FEB85F7D189B0361561A /* Pods_EcoCDNTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C97918577997ED9652887C5 /* Pods_EcoCDN_EcoCDNUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				2A09133426CBBB7F00286496 /* EcoCDN */,
-				2A09134B26CBBB8000286496 /* EcoCDNTests */,
-				2A09135626CBBB8000286496 /* EcoCDNUITests */,
 				2A09133326CBBB7F00286496 /* Products */,
+				CF4BDE68B02DD2D0A1DD3501 /* Pods */,
+				A9A3F545C381C128A1E5FC1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,22 +142,29 @@
 			path = EcoCDN;
 			sourceTree = "<group>";
 		};
-		2A09134B26CBBB8000286496 /* EcoCDNTests */ = {
+		A9A3F545C381C128A1E5FC1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2A09134C26CBBB8000286496 /* EcoCDNTests.swift */,
-				2A09134E26CBBB8000286496 /* Info.plist */,
+				2A533B4E26CBBD1500C3F8AC /* SwarmCloudSDK.xcframework */,
+				2A533B4D26CBBD1500C3F8AC /* WebRTC.xcframework */,
+				54B751624E5DA179249FA879 /* Pods_EcoCDN.framework */,
+				BA017EEA86E72A5E0828A0E8 /* Pods_EcoCDN_EcoCDNUITests.framework */,
+				FEF94F6DAAC15C901E3D4E0D /* Pods_EcoCDNTests.framework */,
 			);
-			path = EcoCDNTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2A09135626CBBB8000286496 /* EcoCDNUITests */ = {
+		CF4BDE68B02DD2D0A1DD3501 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2A09135726CBBB8000286496 /* EcoCDNUITests.swift */,
-				2A09135926CBBB8000286496 /* Info.plist */,
+				B5CB985A6D1CBAC9F804E0F8 /* Pods-EcoCDN.debug.xcconfig */,
+				4599977E290F0731E01D8B30 /* Pods-EcoCDN.release.xcconfig */,
+				DCDC4119DB004B09380E7DB7 /* Pods-EcoCDN-EcoCDNUITests.debug.xcconfig */,
+				2B79657BE8BAF884EA385D3E /* Pods-EcoCDN-EcoCDNUITests.release.xcconfig */,
+				4C56EB7B93E403CDE25A70BD /* Pods-EcoCDNTests.debug.xcconfig */,
+				18F78D2E47AA24F25D78DFF7 /* Pods-EcoCDNTests.release.xcconfig */,
 			);
-			path = EcoCDNUITests;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A09135C26CBBB8000286496 /* Build configuration list for PBXNativeTarget "EcoCDN" */;
 			buildPhases = (
+				152F3D7F3A68B4BF910E9C9A /* [CP] Check Pods Manifest.lock */,
 				2A09132E26CBBB7F00286496 /* Sources */,
 				2A09132F26CBBB7F00286496 /* Frameworks */,
 				2A09133026CBBB7F00286496 /* Resources */,
+				43F415F81099F1AE6C7CDA97 /* [CP] Embed Pods Frameworks */,
+				2A533B5326CBBD1500C3F8AC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A09135F26CBBB8000286496 /* Build configuration list for PBXNativeTarget "EcoCDNTests" */;
 			buildPhases = (
+				000D710D7C754F0E65227369 /* [CP] Check Pods Manifest.lock */,
 				2A09134426CBBB8000286496 /* Sources */,
 				2A09134526CBBB8000286496 /* Frameworks */,
 				2A09134626CBBB8000286496 /* Resources */,
@@ -170,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A09136226CBBB8000286496 /* Build configuration list for PBXNativeTarget "EcoCDNUITests" */;
 			buildPhases = (
+				8E5BDE7EC78BA2CE2FBEE93C /* [CP] Check Pods Manifest.lock */,
 				2A09134F26CBBB8000286496 /* Sources */,
 				2A09135026CBBB8000286496 /* Frameworks */,
 				2A09135126CBBB8000286496 /* Resources */,
+				6D5DA9CFC1D0FF9C4B738AC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +298,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		000D710D7C754F0E65227369 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EcoCDNTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		152F3D7F3A68B4BF910E9C9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EcoCDN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43F415F81099F1AE6C7CDA97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoCDN/Pods-EcoCDN-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoCDN/Pods-EcoCDN-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoCDN/Pods-EcoCDN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D5DA9CFC1D0FF9C4B738AC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoCDN-EcoCDNUITests/Pods-EcoCDN-EcoCDNUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoCDN-EcoCDNUITests/Pods-EcoCDN-EcoCDNUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoCDN-EcoCDNUITests/Pods-EcoCDN-EcoCDNUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E5BDE7EC78BA2CE2FBEE93C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EcoCDN-EcoCDNUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2A09132E26CBBB7F00286496 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,7 +416,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A09134D26CBBB8000286496 /* EcoCDNTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +423,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A09135826CBBB8000286496 /* EcoCDNUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,12 +579,14 @@
 		};
 		2A09135D26CBBB8000286496 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5CB985A6D1CBAC9F804E0F8 /* Pods-EcoCDN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98H6RD4RN4;
 				INFOPLIST_FILE = EcoCDN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +600,14 @@
 		};
 		2A09135E26CBBB8000286496 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4599977E290F0731E01D8B30 /* Pods-EcoCDN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98H6RD4RN4;
 				INFOPLIST_FILE = EcoCDN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +621,7 @@
 		};
 		2A09136026CBBB8000286496 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C56EB7B93E403CDE25A70BD /* Pods-EcoCDNTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +644,7 @@
 		};
 		2A09136126CBBB8000286496 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18F78D2E47AA24F25D78DFF7 /* Pods-EcoCDNTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +667,7 @@
 		};
 		2A09136326CBBB8000286496 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCDC4119DB004B09380E7DB7 /* Pods-EcoCDN-EcoCDNUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +688,7 @@
 		};
 		2A09136426CBBB8000286496 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B79657BE8BAF884EA385D3E /* Pods-EcoCDN-EcoCDNUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
