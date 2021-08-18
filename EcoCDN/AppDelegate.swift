@@ -14,9 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let config = SWCP2pConfig.defaultConfiguration()
-        config.logLevel = SWCLogLevel.debug
-        SWCP2pEngine.sharedInstance().start(token: "luK3-_tMR", p2pConfig: config)
         return true
     }
 
